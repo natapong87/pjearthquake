@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "395909692097",
+    "project_id": "pjeartquake",
+    "storage_bucket": "pjeartquake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395909692097:android:abd0293052b19f599a3240",
+        "android_client_info": {
+          "package_name": "com.flutterthailand.pjearthquake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395909692097-qll1cfir5ncv0a76s21jvtf23n1osn0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxhGrnWKfsELR_ntFoj0B_QUqREVimed4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395909692097-qll1cfir5ncv0a76s21jvtf23n1osn0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
