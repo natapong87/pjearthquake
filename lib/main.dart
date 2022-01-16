@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Eartquake alert',
-      home: MainScreen(),
+      home: informationEQ(),
       theme: ThemeData(primarySwatch: Colors.blueGrey),
     );
   }

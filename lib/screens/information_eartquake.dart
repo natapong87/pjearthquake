@@ -59,6 +59,7 @@ class _informationEQState extends State<informationEQ> {
                       bottomLeft: Radius.circular(20),
                       bottomRight: Radius.circular(20)),
                   //border: Border.all(width: 0.5),
+
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.5),
@@ -68,33 +69,33 @@ class _informationEQState extends State<informationEQ> {
                     )
                   ],
                 ),
-                // child: Row(
-                //   crossAxisAlignment: CrossAxisAlignment.start,
-                //   children: [
-                //     Text(
-                //       "3.4",
-                //       style: TextStyle(
-                //           fontSize: 25,
-                //           color: Colors.green,
-                //           fontWeight: FontWeight.bold),
-                //     ),
-                //     Expanded(
-                //       child: Text(
-                //         "แผ่นดินไหวขนาดเล็ก",
-                //         style: TextStyle(
-                //             fontSize: 25,
-                //             color: Colors.black54,
-                //             fontWeight: FontWeight.bold),
-                //         textAlign: TextAlign.center,
-                //       ),
-                //     ),
-                //     Expanded(
-                //         child: Text(
-                //       "ต.เวียง อ.เวียงป่าเป้า จ.เชียงราย ",
-                //       //textAlign: TextAlign.left, 
-                //     ))
-                //   ],
-                // ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //children: <Widget>
+                  
+                  children: [
+                    Text(
+                      "ประเทศเมียนมา",
+                      style: TextStyle(fontSize: 25),
+                    ),
+
+                    Date(), Time(),
+                    
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Expanded(child: Text("12345")),
+                        //Icon(Icons.date_range),
+                        // Text(
+                        //   "13-01-2022",
+                        //   style: TextStyle(fontSize: 20),
+                          
+                        // ),
+                      
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ],
@@ -103,7 +104,24 @@ class _informationEQState extends State<informationEQ> {
     );
   }
 
-Container showmap() {
+  ListTile Date() {
+    return ListTile(
+      horizontalTitleGap: -10,
+      leading: Icon(Icons.date_range),
+      title: Text("13-01-2022"),
+      
+    );
+  }
+
+  ListTile Time() {
+    return ListTile(
+      horizontalTitleGap: -10,
+      leading: Icon(Icons.access_time),
+      title: Text("21:34:30"),
+    );
+  }
+
+  Container showmap() {
     LatLng latLng = LatLng(lat, lng);
     CameraPosition cameraPosition = CameraPosition(
       target: latLng,
@@ -121,9 +139,4 @@ Container showmap() {
       ),
     );
   }
-
-
-
-
-
 }
