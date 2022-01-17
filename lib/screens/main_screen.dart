@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pjearthquake/screens/all.dart';
+import 'package:pjearthquake/screens/ShowAll_Eartquake.dart';
 import 'package:pjearthquake/screens/home.dart';
-import 'package:pjearthquake/screens/setting.dart';
+import 'package:pjearthquake/screens/settings_page.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -15,7 +15,7 @@ int _currentIndex = 0;
 final tabs = [
   HomeScreen(),
   ShowAll(),
-  SettingApp()
+  SettingsPage()
 ];
 
   @override

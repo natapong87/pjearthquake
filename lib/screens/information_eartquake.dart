@@ -70,10 +70,11 @@ class _informationEQState extends State<informationEQ> {
                   ],
                 ),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   //children: <Widget>
                   
                   children: [
+                    
                     Text(
                       "ประเทศเมียนมา",
                       style: TextStyle(fontSize: 25),
