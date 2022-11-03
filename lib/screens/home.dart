@@ -76,12 +76,10 @@ class _HomeScreenState extends State<HomeScreen> {
               leading: CircleAvatar(
                 radius: 30,
                 child: FittedBox(
-                  //child: Text('WMC'),
                   child: Text('${DataModel().waveformIDStationCode}'),
                 ),
               ),
             title: Text('${DataModel().amplitudeValue}'),
-              //title: Text('123'),
               subtitle: Text('${DataModel().sLastModified}'),
             ),
           );
