@@ -1,0 +1,385 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.flutterthailand.pjearthquake"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\xampp\htdocs\pjearthquake-master\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\xampp\htdocs\pjearthquake-master\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+15-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+16-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+17-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
+18-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:26:5-77
+19-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:26:22-74
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:29:5-82
+20-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:29:22-79
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\6c73aeac40598ce126204afc49984458\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:25:5-79
+21-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\6c73aeac40598ce126204afc49984458\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:25:22-76
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+27
+28    <queries>
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+29
+30        <!-- Needs to be explicitly declared on Android R+ -->
+31        <package android:name="com.google.android.apps.maps" />
+31-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+31-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+32    </queries>
+33
+34    <application
+34-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:3:4-44:19
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.6.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\bb90ee5da256303a302a19d846ca373f\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:5:9-43
+38        android:label="pjearthquake" >
+38-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:4:9-37
+39        <meta-data
+39-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:7:9-8:73
+40            android:name="com.google.android.geo.API_KEY"
+40-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:7:20-65
+41            android:value="AIzaSyC8TNMfA5eIwqgyMhsOq2I1P0qLPzr-Eo4" />
+41-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:8:16-71
+42
+43        <activity
+43-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:10:9-38:20
+44            android:name="com.flutterthailand.pjearthquake.MainActivity"
+44-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:11:13-41
+45            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:14:13-163
+46            android:hardwareAccelerated="true"
+46-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:15:13-47
+47            android:launchMode="singleTop"
+47-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:12:13-43
+48            android:theme="@style/LaunchTheme"
+48-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:13:13-47
+49            android:windowSoftInputMode="adjustResize" >
+49-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:16:13-55
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+57-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:21:13-24:17
+58                android:name="io.flutter.embedding.android.NormalTheme"
+58-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:22:15-70
+59                android:resource="@style/NormalTheme" />
+59-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:23:15-52
+60            <!--
+61                 Displays an Android View that continues showing the launch screen
+62                 Drawable until Flutter paints its first frame, then this splash
+63                 screen fades out. A splash screen is useful to avoid any visual
+64                 gap between the end of Android's launch screen and the painting of
+65                 Flutter's first frame.
+66            -->
+67            <meta-data
+67-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:30:13-33:17
+68                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+68-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:31:15-79
+69                android:resource="@drawable/launch_background" />
+69-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:32:15-61
+70
+71            <intent-filter>
+71-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:34:13-37:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:35:17-68
+72-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:35:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:36:17-76
+74-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:36:27-74
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+81-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:41:9-43:33
+82            android:name="flutterEmbedding"
+82-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:42:13-44
+83            android:value="2" />
+83-->C:\xampp\htdocs\pjearthquake-master\android\app\src\main\AndroidManifest.xml:43:13-30
+84
+85        <service
+85-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+86            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+86-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+87            android:exported="false"
+87-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+88            android:permission="android.permission.BIND_JOB_SERVICE" />
+88-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+89        <service
+89-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+90            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+90-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+91            android:exported="false" >
+91-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+92            <intent-filter>
+92-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+93                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+93-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+93-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+94            </intent-filter>
+95        </service>
+96
+97        <receiver
+97-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+98            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+98-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+99            android:exported="true"
+99-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+101            <intent-filter>
+101-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+102-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+103            </intent-filter>
+104        </receiver>
+105
+106        <service
+106-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
+107            android:name="com.google.firebase.components.ComponentDiscoveryService"
+107-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:18-89
+108            android:directBootAware="true"
+108-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+109            android:exported="false" >
+109-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:55:13-37
+110            <meta-data
+110-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+111                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+111-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+113            <meta-data
+113-->[:firebase_core] C:\xampp\htdocs\pjearthquake-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+114                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+114-->[:firebase_core] C:\xampp\htdocs\pjearthquake-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[:firebase_core] C:\xampp\htdocs\pjearthquake-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:56:13-58:85
+117                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+117-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:57:17-119
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:58:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\2bcb535904e8fc310a8e6da57cabe4c0\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:28:13-30:85
+120                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+120-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\2bcb535904e8fc310a8e6da57cabe4c0\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:29:17-115
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\2bcb535904e8fc310a8e6da57cabe4c0\transformed\jetified-firebase-datatransport-18.1.6\AndroidManifest.xml:30:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\6c73aeac40598ce126204afc49984458\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+123                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+123-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\6c73aeac40598ce126204afc49984458\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\6c73aeac40598ce126204afc49984458\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\1b34f207307389dbdf4480c7f05d33fd\transformed\jetified-firebase-installations-17.0.3\AndroidManifest.xml:18:13-20:85
+126                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+126-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\1b34f207307389dbdf4480c7f05d33fd\transformed\jetified-firebase-installations-17.0.3\AndroidManifest.xml:19:17-127
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\1b34f207307389dbdf4480c7f05d33fd\transformed\jetified-firebase-installations-17.0.3\AndroidManifest.xml:20:17-82
+128        </service>
+129
+130        <provider
+130-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+131            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+131-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+132            android:authorities="com.flutterthailand.pjearthquake.flutterfirebasemessaginginitprovider"
+132-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+133            android:exported="false"
+133-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+134            android:initOrder="99" />
+134-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+135
+136        <service
+136-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+137            android:name="com.lyokone.location.FlutterLocationService"
+137-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+138            android:enabled="true"
+138-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+139            android:exported="false"
+139-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+140            android:foregroundServiceType="location" />
+140-->[:location] C:\xampp\htdocs\pjearthquake-master\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+141
+142        <uses-library
+142-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+143            android:name="androidx.window.extensions"
+143-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+144            android:required="false" />
+144-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+145        <uses-library
+145-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+146            android:name="androidx.window.sidecar"
+146-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+147            android:required="false" />
+147-->[androidx.window:window:1.0.0-beta04] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\9a06652b172c4798d62e3e102c643a8e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+148
+149        <receiver
+149-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:32:9-39:20
+150            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+150-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:33:13-78
+151            android:exported="true"
+151-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:34:13-36
+152            android:permission="com.google.android.c2dm.permission.SEND" >
+152-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:35:13-73
+153            <intent-filter>
+153-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+154                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+154-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+154-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+155            </intent-filter>
+156        </receiver>
+157        <!--
+158             FirebaseMessagingService performs security checks at runtime,
+159             but set to not exported to explicitly avoid allowing another app to call it.
+160        -->
+161        <service
+161-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:45:9-52:19
+162            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+162-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:46:13-82
+163            android:directBootAware="true"
+163-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:47:13-43
+164            android:exported="false" >
+164-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\aae759bb2a6ab4b50d4737d37bbb9ccd\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:48:13-37
+165            <intent-filter android:priority="-500" >
+165-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+166                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+166-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+166-->[:firebase_messaging] C:\xampp\htdocs\pjearthquake-master\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+167            </intent-filter>
+168        </service>
+169        <service
+169-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:29:9-35:19
+170            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+170-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:30:13-103
+171            android:exported="false" >
+171-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:31:13-37
+172            <meta-data
+172-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:32:13-34:39
+173                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+173-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:33:17-94
+174                android:value="cct" />
+174-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\7f8e6b67f6609a470d4f4dc790422499\transformed\jetified-transport-backend-cct-3.1.7\AndroidManifest.xml:34:17-36
+175        </service>
+176        <service
+176-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:26:9-30:19
+177            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+177-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:27:13-117
+178            android:exported="false"
+178-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:28:13-37
+179            android:permission="android.permission.BIND_JOB_SERVICE" >
+179-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:29:13-69
+180        </service>
+181
+182        <receiver
+182-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:32:9-34:40
+183            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+183-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:33:13-132
+184            android:exported="false" />
+184-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\cf04c556bf63b73d89a881f9b8397839\transformed\jetified-transport-runtime-3.1.7\AndroidManifest.xml:34:13-37
+185
+186        <provider
+186-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+187            android:name="com.google.firebase.provider.FirebaseInitProvider"
+187-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+188            android:authorities="com.flutterthailand.pjearthquake.firebaseinitprovider"
+188-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+189            android:directBootAware="true"
+189-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+190            android:exported="false"
+190-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+191            android:initOrder="100" />
+191-->[com.google.firebase:firebase-common:20.1.2] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\895073ecf31e70e6ed3ab94c6ec293a7\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+192
+193        <receiver
+193-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+194            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+194-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+195            android:enabled="true"
+195-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+196            android:exported="false" >
+196-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+197        </receiver>
+198
+199        <service
+199-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+200            android:name="com.google.android.gms.measurement.AppMeasurementService"
+200-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+202            android:exported="false" />
+202-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+203        <service
+203-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+204            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+204-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+205            android:enabled="true"
+205-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+206            android:exported="false"
+206-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+207            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+207-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\04bb69d2a149b32705b4f0b6e705d6b1\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+208        <uses-library
+208-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+209            android:name="org.apache.http.legacy"
+209-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+210            android:required="false" />
+210-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8288a1c0cb7305484679e7775116edef\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+211
+212        <activity
+212-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\c8fda46b3224cce41f94241ac76ce77f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+213            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+213-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\c8fda46b3224cce41f94241ac76ce77f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+214            android:exported="false"
+214-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\c8fda46b3224cce41f94241ac76ce77f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\c8fda46b3224cce41f94241ac76ce77f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+216
+217        <meta-data
+217-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8d1c796942fc739c7370d7f4350ca879\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+218            android:name="com.google.android.gms.version"
+218-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8d1c796942fc739c7370d7f4350ca879\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+219            android:value="@integer/google_play_services_version" />
+219-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HP2022 WIN10\.gradle\caches\transforms-3\8d1c796942fc739c7370d7f4350ca879\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+220    </application>
+221
+222</manifest>
