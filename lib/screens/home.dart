@@ -38,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
     //   return productList;
     // }
   //}
+
   late DataModel dataModel;
   @override
   void initState(){
@@ -82,8 +83,6 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text('${DataModel().amplitudeValue}'),
               //title: Text('123'),
               subtitle: Text('${DataModel().sLastModified}'),
-              //subtitle: Text(productList[index]['waveformID_channelCode']),
-              //subtitle: Text('56'),
             ),
           );
         },
