@@ -1,4 +1,4 @@
-#Thu Nov 03 18:28:19 ICT 2022
+#Sat Nov 05 15:24:10 ICT 2022
 base.0=C\:\\xampp\\htdocs\\pjearthquake-master\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
