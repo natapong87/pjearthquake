@@ -6,7 +6,6 @@ import 'package:intl/intl.dart';
 import 'package:pjearthquake/model/data_model.dart';
 import 'package:pjearthquake/utility/my_constant.dart';
 import 'package:pjearthquake/utility/my_style.dart';
-//import 'package:http/http.dart' as http;
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -14,7 +13,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  //late DataModel dataModel;
   DataModel dataModel = DataModel();
   List<DataModel> dataModels = [];
 
@@ -35,7 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
         setState(() {
           dataModels.add(dataModel);
         });
-        //print('station = ${dataModel.waveformIDStationCode}');
       }
     });
   }
@@ -47,7 +44,6 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('Eartquake alert'),
       ),
       body: ListView.builder(
-        //itemCount: 10, //จำนวนข้อมูลที่เอามาแสดง
         itemBuilder: (context, index) {
           return dataModels.length == 0
               ? MyStyle().showProgress()
@@ -70,21 +66,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 );
-          // Card(
-          //   elevation: 5,
-          //   margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-          //   child: ListTile(
-          //     leading: CircleAvatar(
-          //       radius: 30,
-          //       child: FittedBox(
-          //         //child: Text(dataModels[index].waveformIDStationCode),
-          //         child: Text('${dataModel.waveformIDStationCode}'),
-          //       ),
-          //     ),
-          //     title: Text('${dataModel.amplitudeValue}'),
-          //     subtitle: Text('${dataModel.sLastModified}'),
-          //   ),
-          // );
         },
       ),
     );

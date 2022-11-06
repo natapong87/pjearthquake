@@ -1,11 +1,9 @@
 import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:pjearthquake/model/data_model.dart';
-import 'package:pjearthquake/model/location_model.dart';
 import 'package:pjearthquake/screens/home.dart';
 import 'package:pjearthquake/utility/my_style.dart';
 
@@ -17,9 +15,7 @@ class ShowAll extends StatefulWidget {
 }
 
 class _ShowAllState extends State<ShowAll> {
-  //Field
   late double lat1, lng1;
-  //CameraPosition? position;
 
   @override
   void initState() {
@@ -60,13 +56,11 @@ class _ShowAllState extends State<ShowAll> {
   }
 
   Container showMap() {
-   // if (lat1 == null) {
     LatLng latLng1 = LatLng(lat1, lng1);
     CameraPosition position = CameraPosition(
       target: latLng1,
       zoom: 10.0,
     );
-    //}
 
     Marker userMarker() {
       return Marker(
@@ -849,7 +843,7 @@ class _ShowAllState extends State<ShowAll> {
     }
 
     return Container(
-      height: 547.4, //547.4
+      height: 547.4,
       child: lat1 == null
           ? MyStyle().showProgress()
           : GoogleMap(

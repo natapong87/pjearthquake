@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pjearthquake/screens/ShowAll_Eartquake.dart';
 import 'package:pjearthquake/screens/home.dart';
-import 'package:pjearthquake/screens/settings_page.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -15,7 +14,6 @@ int _currentIndex = 0;
 final tabs = [
   HomeScreen(),
   ShowAll(),
-  //SettingsPage()
 ];
 
   @override
@@ -35,10 +33,6 @@ final tabs = [
           icon: Icon(Icons.location_on),
           label: 'Map'
       ),
-      // BottomNavigationBarItem(
-      //     icon: Icon(Icons.settings),
-      //     label: 'Setting'
-      // ),
       ],
       onTap: (index){
         setState(() {
