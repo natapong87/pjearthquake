@@ -15,7 +15,7 @@ int _currentIndex = 0;
 final tabs = [
   HomeScreen(),
   ShowAll(),
-  SettingsPage()
+  //SettingsPage()
 ];
 
   @override
@@ -35,10 +35,10 @@ final tabs = [
           icon: Icon(Icons.location_on),
           label: 'Map'
       ),
-      BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
-          label: 'Setting'
-      ),
+      // BottomNavigationBarItem(
+      //     icon: Icon(Icons.settings),
+      //     label: 'Setting'
+      // ),
       ],
       onTap: (index){
         setState(() {

@@ -15,7 +15,7 @@ if (!$link->set_charset("utf8")) {
     exit();
 	}
 
-	$result = mysqli_query($link, "SELECT * FROM amplitude");
+	$result = mysqli_query($link, "SELECT * FROM amplitude ORDER BY _last_modified DESC");
    
 	while($row=mysqli_fetch_assoc($result)){
 	$output[]=$row;
