@@ -17,7 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
   //late DataModel dataModel;
   DataModel dataModel = DataModel();
   List<DataModel> dataModels = [];
-  var outputFormat = DateFormat('MM/dd/yyyy hh:mm a');
 
   @override
   void initState() {
@@ -38,7 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
         });
         //print('station = ${dataModel.waveformIDStationCode}');
       }
-      //return dataModel;
     });
   }
 
